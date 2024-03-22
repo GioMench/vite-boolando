@@ -7,34 +7,50 @@ export default {
 
 <template>
     <header>
-        <nav class="container">
-            <div class="srcbar">
-                <div class="type">
-                    <ul>
-                        <li><a class="nav-item" href="#">Uomo</a></li>
-                        <li><a class="nav-item" href="#">Donna</a></li>
-                        <li><a class="nav-item" href="#">Bambini</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="min-height: 50px;">
+            <div class="container-fluid position-relative">
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Uomo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Donna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Bambino</a>
+                        </li>
+
                     </ul>
                 </div>
-                <!--type-->
-                <div class="logo">
-                    <img src="/img/boolean-logo.png">
-                </div>
-                <!--logo-->
-                <div class="private">
-                    <ul>
-                        <li><i class="fa-regular fa-user"></i></li>
-                        <li><i class="fa-regular fa-heart"></i></li>
-                        <li><i class="fa-solid fa-bag-shopping"></i></li>
+
+                <img class="position-absolute bottom-0 start-50" src="/img/boolean-logo.png" alt="Boolando" width="130" height="30">
+                
+                <div class="collapse navbar-collapse position-absolute bottom-0 end-0" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
-                <!--private-->
+
             </div>
+
         </nav>
     </header>
 </template>
 
-<style lang="scss">
-
-
-</style>
+<style lang="scss"></style>
