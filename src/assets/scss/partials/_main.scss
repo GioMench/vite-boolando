@@ -39,4 +39,15 @@
     left: 30px;
     font-size: 10px;
 }
+.back-image {
+    display: none;
+}
+
+.card:hover .front-image {
+    display: none;
+}
+
+.card:hover .back-image {
+    display: block;
+}
 

@@ -11,7 +11,11 @@ export default {
             <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
 
                 <div class="card m-3 p-0" style="width: 18rem;">
-                    <img src="/img/1.webp" class="card-img-top" alt="...">
+
+                    <img src="/img/1.webp" class="card-img-top front-image" alt="...">
+
+                    <img src="/img/1b.webp" class="card-img-top back-image"  alt="">
+                    
                     <div class="card-body top">
                         <div class="like">
                             <i class="fa-solid fa-heart"></i>
