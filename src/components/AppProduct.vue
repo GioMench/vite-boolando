@@ -1,16 +1,20 @@
 <script>
 export default {
     name: 'AppProduct',
+    props:{
+        product : Object
+        
+    }
 
 }
 </script>
 
 <template>
     <div class="card m-3 p-0" style="width: 18rem;">
+        
+        <img :src="'/img/'+product.frontImage" class="card-img-top front-image" alt="'image of' + product.name">
 
-        <img :src="'/img/'+'product.frontImage'" class="card-img-top front-image" alt="">
-
-        <img :src="'/img/'+'product.backImage'" class="card-img-top back-image" alt="">
+        <img :src="'/img/'+product.backImage" class="card-img-top back-image" alt="'image of'+ product.name">
 
         <div class="card-body top">
             <div class="like">
@@ -18,18 +22,18 @@ export default {
             </div>
 
             <div class="sales">
-                -50%
+                50%
             </div>
 
             <div class="sustainable">
                 Sostenibilità
             </div>
 
-            <div>{{brand}}</div>
-            <h5 class="card-title">RELAXED FIT TEE UNISEX</h5>
+            <div>{{product.brand}}</div>
+            <h5 class="card-title">{{product.name}}</h5>
             <div class="card-text"> 14,99
                 <span class="price">
-                    <del class="text-danger">29,99&euro;</del>
+                    <del class="text-danger">{{product.price}}&euro;</del>
                 </span>
             </div>
 
