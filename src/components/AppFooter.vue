@@ -5,7 +5,8 @@ export default {
 </script>
 
 <template>
-   <nav class="container">
+    <footer>
+        <nav class="container">
             <div class="more">
                 <div class="srl">
                     <div>
@@ -31,8 +32,7 @@ export default {
 
 
         </nav>
+    </footer>
 </template>
 
-<style>
-
-</style>
+<style></style>

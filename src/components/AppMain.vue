@@ -5,7 +5,8 @@ export default {
 </script>
 
 <template>
-  <div class="products">
+    <main>
+        <div class="products">
             <div class="container">
                 <div class="row">
 
@@ -237,8 +238,7 @@ export default {
             </div>
 
         </div>
+    </main>
 </template>
 
-<style>
-
-</style>
+<style></style>

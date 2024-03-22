@@ -6,7 +6,8 @@ export default {
 </script>
 
 <template>
-  <nav class="container">
+    <header>
+        <nav class="container">
             <div class="srcbar">
                 <div class="type">
                     <ul>
@@ -30,8 +31,10 @@ export default {
                 <!--private-->
             </div>
         </nav>
+    </header>
 </template>
 
-<style>
+<style lang="scss">
+
 
 </style>
