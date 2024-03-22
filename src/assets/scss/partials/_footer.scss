@@ -1,0 +1,10 @@
+@use './variables' as *;
+
+footer{
+    background-color: $darkcolor;
+    padding: 15px;
+}
+
+li{
+    list-style: none;
+}
