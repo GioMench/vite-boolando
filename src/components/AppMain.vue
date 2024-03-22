@@ -1,10 +1,17 @@
 <script>
-import AppProduct from '../components/AppProduct.vue'
+import AppProduct from '../components/AppProduct.vue';
+import { products } from '../data.js';
 export default {
     name: 'AppMain',
     components:{
         AppProduct,
+    },
+    data() {
+    return {
+      products
     }
+  }
+
 }
 </script>
 
@@ -14,7 +21,7 @@ export default {
         <div class="container m-5 p-0">
             <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
 
-                <AppProduct />
+                <AppProduct v-for="product in products"/>
 
             </div>
         </div>

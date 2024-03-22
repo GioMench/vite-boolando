@@ -1,15 +1,16 @@
 <script>
 export default {
-    name: 'AppProduct'
+    name: 'AppProduct',
+
 }
 </script>
 
 <template>
     <div class="card m-3 p-0" style="width: 18rem;">
 
-        <img src="/img/1.webp" class="card-img-top front-image" alt="...">
+        <img :src="'/img/'+'product.frontImage'" class="card-img-top front-image" alt="">
 
-        <img src="/img/1b.webp" class="card-img-top back-image" alt="">
+        <img :src="'/img/'+'product.backImage'" class="card-img-top back-image" alt="">
 
         <div class="card-body top">
             <div class="like">
@@ -24,7 +25,7 @@ export default {
                 Sostenibilità
             </div>
 
-            <div>Levi's</div>
+            <div>{{brand}}</div>
             <h5 class="card-title">RELAXED FIT TEE UNISEX</h5>
             <div class="card-text"> 14,99
                 <span class="price">
