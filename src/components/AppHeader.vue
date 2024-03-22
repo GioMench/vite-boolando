@@ -24,7 +24,7 @@ export default {
                     </ul>
                 </div>
 
-                <img class="position-absolute start-50 align-middle" src="/img/boolean-logo.png" alt="Boolando" width="130" height="30">
+                <img class="position-absolute start-50" src="/img/boolean-logo.png" alt="Boolando" width="130" height="30">
                 
                 <div class="collapse navbar-collapse position-absolute bottom-0 end-0" id="navbarNav">
                     <ul class="navbar-nav">
