@@ -1,6 +1,5 @@
 <script>
 import AppProduct from '../components/AppProduct.vue';
-import AppModal from '../components/AppModal.vue';
 //import { products } from '../data.js';
 //import axios from 'axios';
 import {state} from '../state.js';
@@ -9,7 +8,6 @@ export default {
     name: 'AppMain',
     components:{
         AppProduct,
-        AppModal
     },
     data() {
     return {
@@ -19,6 +17,7 @@ export default {
   },
   mounted(){
     this.state.getProducts(this.state.base_produtcs_api_url)
+   
   }
 
 }

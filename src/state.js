@@ -3,8 +3,6 @@ import axios from 'axios';
 export const state = reactive({
 
     products: [],
-    disactive: 'modaldisactive',
-    
     base_produtcs_api_url: 'http://localhost:3000/products',
 
     getProducts(url) {
@@ -15,10 +13,7 @@ export const state = reactive({
             .catch(err => {
                 console.error(err.message);
             })
-    },
-
-    modalCreate() {
-        this.disactive = 'active'
-
     }
+
+    
 })
