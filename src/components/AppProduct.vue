@@ -1,10 +1,19 @@
 <script>
+import {state} from '../state.js';
 export default {
     name: 'AppProduct',
     props:{
         product : Object,
-        
-        
+    },
+
+    data(){
+        return{
+            state,
+            
+        }
+    },
+    mounted(){
+        this.state.modalCreate()
     }
 
 }
@@ -31,7 +40,7 @@ export default {
             </div>
 
             <div>{{product.brand}}</div>
-            <h5 class="card-title">{{product.name}}</h5>
+            <h5 class="card-title" @click="this.state.modalCreate">{{product.name}}</h5>
             <div class="card-text"> 14,99
                 <span class="price">
                     <del class="text-danger">{{product.price}}&euro;</del>
