@@ -1,6 +1,8 @@
 <script>
 import AppProduct from '../components/AppProduct.vue';
-import { products } from '../data.js';
+//import { products } from '../data.js';
+import axios from 'axios';
+
 export default {
     name: 'AppMain',
     components:{
@@ -8,9 +10,17 @@ export default {
     },
     data() {
     return {
-      products
+      products : []
     }
+  },
+  mounted(){
+    axios.get('http://localhost:3000/products').then(response =>{
+        console.log(response);
+        this.products = response.data
+    })
   }
+
+
 
 }
 </script>
