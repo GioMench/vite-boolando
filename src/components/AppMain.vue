@@ -1,7 +1,8 @@
 <script>
 import AppProduct from '../components/AppProduct.vue';
 //import { products } from '../data.js';
-import axios from 'axios';
+//import axios from 'axios';
+import {state} from '../state.js';
 
 export default {
     name: 'AppMain',
@@ -10,17 +11,13 @@ export default {
     },
     data() {
     return {
-      products : []
+      //products : [],
+      state
     }
   },
   mounted(){
-    axios.get('http://localhost:3000/products').then(response =>{
-        console.log(response);
-        this.products = response.data
-    })
+    this.state.getProducts(this.state.base_produtcs_api_url)
   }
-
-
 
 }
 </script>
@@ -31,7 +28,7 @@ export default {
         <div class="container-sm m-5 p-0">
             <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 justify-content-center">
 
-                <AppProduct v-for="(product, i) in products" :product="product" />
+                <AppProduct v-for="(product, i) in state.products" :product="product" />
 
             </div>
         </div>
