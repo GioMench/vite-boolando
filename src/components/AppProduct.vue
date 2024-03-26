@@ -2,7 +2,8 @@
 export default {
     name: 'AppProduct',
     props:{
-        product : Object
+        product : Object,
+        
         
     }
 
