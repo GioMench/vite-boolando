@@ -1,6 +1,7 @@
-.modaldisactive{
-    display: none;
+.modalactive{
+    z-index: 1;
+    display: block;
 }
-.active{
-    display:block;
+.modalInactive{
+    display: none;
 }

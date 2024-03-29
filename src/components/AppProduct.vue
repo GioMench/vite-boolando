@@ -1,7 +1,12 @@
 <script>
 import {state} from '../state.js';
+import AppModal from './AppModal.vue';
 export default {
     name: 'AppProduct',
+    components:{
+        AppModal
+    },
+
     props:{
         product : Object,
     },
@@ -12,6 +17,13 @@ export default {
             
         }
     },
+    methods:{
+        createModal(){
+            this.modalInactive= 'modalActive'
+        }
+            
+        
+    }
     
 
 }
@@ -38,7 +50,7 @@ export default {
             </div>
 
             <div>{{product.brand}}</div>
-            <h5 class="card-title">{{product.name}}</h5>
+            <h5 class="card-title" @click="$emit(createModal)">{{product.name}}</h5>
             <div class="card-text"> 14,99
                 <span class="price">
                     <del class="text-danger">{{product.price}}&euro;</del>
